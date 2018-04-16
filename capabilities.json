@@ -1,0 +1,34 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "values",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Settings",
+            "properties": {
+                "includeHeader": {
+                    "displayName": "Include Header",
+                    "type": {
+                       "bool": true
+                        
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+            "rows": {
+                "for": {
+                    "in": "values"
+                }
+            }
+        }
+        }
+    ]
+}
