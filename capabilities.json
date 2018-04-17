@@ -24,9 +24,18 @@
         {
             "table": {
             "rows": {
-                "for": {
-                    "in": "values"
+                "select": [ 
+                    {
+                        "for": {
+                            "in": "values"
+                        }
+                    }
+                ],"dataReductionAlgorithm": {
+                    "sample":{
+                        "count": 64000
+                    }
                 }
+               
             }
         }
         }
